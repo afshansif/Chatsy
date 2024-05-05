@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:weightSum="100"
+    tools:context=".LoginPhoneNumberActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textColor="@color/teal_dark"
+        android:layout_marginBottom="90dp"
+        android:textSize="50dp"
+        android:fontFamily="monospace"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="20"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center">
+
+
+        <com.hbb20.CountryCodePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            app:ccp_showFlag="false"
+            app:ccp_showNameCode="false">
+
+        </com.hbb20.CountryCodePicker>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_rounded_rectange"
+            android:elevation="5dp"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="10dp"
+            android:hint="@string/edit_text_hint_login"
+            android:inputType="phone"
+            >
+
+        </EditText>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="20"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/btn_rounded_rectangle"
+            android:elevation="5dp"
+            android:textColor="@color/off_white"
+            android:text="Send OTP">
+        </Button>
+
+        <ProgressBar
+            android:layout_width="32dp"
+            android:layout_weight="10"
+            android:layout_height="wrap_content">
+        </ProgressBar>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
